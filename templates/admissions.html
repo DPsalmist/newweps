@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+ <!-- Inner Page Banner Area Start Here -->
+    <div class="inner-page-banner-area" style="background-color: #00dc00 !important;">
+        <div class="container">
+            <div class="pagination-area"><br><br>
+                <h1 class="spheaders">School News</h1>
+                <ul>
+                    <li><a class="fa"  href="{% url 'index' %}">Home</a> -</li>
+                    <li>Admissions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Inner Page Banner Area End Here --> <br>
+
+ <div class="about-page1-area">
+        <div class="container">
+            <div class="row about-page1-inner">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="about-page-content-holder">
+                        <div class="content-box">
+                            <h2>Admission Policy Of The School</h2>
+                            <p>The governing body of Newworld Emerald Group of Schools is empowered to formulate within the framework of the Nigerian constitution and the natinal policy on education which determines the criteria for admitting students. <br> We also benchmark international best practices in our admission policy to serve our local and intrenational clientele. Our policy is applicable to every new enrollment in the school from transfer to fresher learners</p>
+                            <p><b>PS: Please check the schools page to learn more info on the age categories for each class.</b></p>
+                        </div>
+                        <div class="content-box">
+                            <h2>Admission Procedures</h2>
+                            <p>The following are the procedures for gaining admission into our school.</p>
+                                <ol>
+                                    <li class="lit"><a href="https://paystack.com/pay/nweps" target="_blank">Click here</a> to make a payment of &#8358;10,000 into the school account.</li>
+                                    <li class="lit">Fill the form that will be sent to you after payment.</li>
+                                    <li class="lit">Your child(ren) will be scheduled for an online placement/entrance test if s/he meets the age criteria of the class.</li>
+                                    <li class="lit">If s/he scores above the minimum score, s/he will be called for an oral interview to test his/her capability to meet the minimum academic requirements for the class s/he would be placed.</li>
+                                    <li class="lit">After the oral test, the child(ren) is granted admission.</li>
+                                    <li class="lit">Proceed to pay tuition fees and other necessary payments.</li>
+                                </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="about-page-img-holder">
+                        <img src="{% static 'img//admission1.png' %}" data-wow-duration="3s" class="img-responsive wow fadeInLeft" alt="admission image">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row about-page1-inner">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="about-page-img-holder">
+                        <img src="{% static 'img/requirements1.jpeg' %}" data-wow-duration="4s" class="img-responsive wow bounceInUp" alt="documentation requiremnets">
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="about-page-content-holder">
+                        
+                        <div class="content-box">
+                            <h2>Documentation Requirements</h2>
+                            <p>Given below are the documents needed for a successful admission.</p>
+                        </div>
+
+                            <ol>
+                                <li class="lit">Official birth certificate of child.</li>
+                                <li class="lit">Immunization certificate of child.</li>
+                                <li class="lit">Six recent passport photograph of child.</li>
+                                <li class="lit">Proof of residence (Water or electricity bill).</li>
+                                <li class="lit">Marital status of parents.</li>
+                                <li class="lit">Health status of child.</li>
+                                <li class="lit">Covid 19 test result (depending on the reality of time).</li>
+                            </ol>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

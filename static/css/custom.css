@@ -1,0 +1,48 @@
+.lg {
+	background: #005A28 !important;
+	color: #fff !important;
+}
+
+.lg:hover {
+	color: #fff !important;
+}
+
+.sm {
+	color: #005A28 !important;
+	text-transform: capitalize !important;
+	border: #005A28 !important;
+	background-color: #fff !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color:  #005A28 !important;
+}
+
+.fa {
+	color: #fff !important;
+}
+
+.btn2 {
+	background-color: #005A28 !important;
+	color: #fff !important;
+	border:#005A28 !important;
+}
+
+.btn2:hover {
+	background-color:  #5fff5f !important;
+}
+
+.service-box1{
+	background-color: #5fff5f !important;
+	box-shadow: 2px 5px 2px #005A28;
+
+}
+
+a {
+	color: #005A28 !important;
+}
+
+.spheaders {
+	color: #fff !important;
+}
+/* #00dc00  */

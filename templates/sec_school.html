@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+ <!-- Inner Page Banner Area Start Here -->
+    <div class="inner-page-banner-area" style="background-color: #00dc00 !important;">
+        <div class="container">
+            <div class="pagination-area"><br><br>
+                <h1 class="spheaders">School News</h1>
+                <ul>
+                    <li><a class="fa"  href="{% url 'index' %}">Home</a> -</li>
+                    <li>Academics -</li> <li>Secondary School</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Inner Page Banner Area End Here --> <br>
+
+
+     <!-- Secondary Page Area Start Here -->
+        <div class="about-page1-area">
+            <div class="container">
+                <div class="row about-page1-inner">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="about-page-img-holder wow fadeUp" data-wow-delay=".2s">
+                            <img data-wow-duration="2s" data-wow-delay=".3s" src="{% static 'img/sec2.jpeg' %}" class="img-responsive wow fadeInRight" alt="about">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="about-page-content-holder">
+                            <div class="content-box">
+                                <h2>Secondary SCHOOL</h2>
+                                <p>The Early Years Foundation Stage (EYFS) sets the standards that all early years providers must meet to ensure that children learn and develop well and are kept healthy and safe. <br>
+                                At NWEPS, our EYFS structure promotes teaching and learning to ensure children’s ‘school readiness’ and gives children the broad range of knowledge and skills that provide the right foundation for good future progress through school and life.</p>
+                            </div>
+                            <div class="content-box">
+                                <h2>Age Groupings</h2>
+                                    <ul style="list-style-type: circle;">
+                                        <li class="lit"><b>Creche:</b>  0 months - 20 months</li>
+                                        <li class="lit"><b>Foundation:</b> 16 months - 26 months</li>
+                                        <li class="lit"><b>Playgroup:</b> 22 months - 36 months</li>
+                                        <li class="lit"><b>Nursery:</b> 30 months - 50 months</li>
+                                        <li class="lit"><b>Reception:</b> 40 months - 60 months</li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="row about-page1-inner">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="about-page-content-holder">
+                            
+                            <div class="content-box">
+                                <h2>Prime Areas</h2>
+                                <p>Our specific areas include essential skills and knowledge for children to participate successfully in society. We work together with the parents and move through to support development in all other areas for our learners. Prime areas include but not limited to the following:
+                                </p>
+                            </div>
+                            <div class="content-box">
+                                    <ul style="list-style-type: circle;">
+                                        <li class="lit">Literacy</li>
+                                        <li class="lit">Mathematics</li>
+                                        <li class="lit">Playing and exploring</li>
+                                        <li class="lit">Expressive Arts and Design</li>
+                                        <li class="lit">Communication and Language</li>
+                                        <li class="lit">Creating and thinking critically</li>
+                                        <li class="lit">Active learning</li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="about-page-img-holder fadeIn">
+                            <img data-wow-delay=".5s" src="{% static 'img/eyfs4.jpeg' %}" class="img-responsive wow fadeInUp" alt="about">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Secondary Page Area End Here -->
+
+
+
+{% endblock content %}

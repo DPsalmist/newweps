@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+ <!-- Inner Page Banner Area Start Here -->
+        <div class="inner-page-banner-area" style="background-color: #00dc00 !important;">
+            <div class="container">
+                <div class="pagination-area"><br><br>
+                    <h1 class="spheaders">About us</h1>
+                    <ul>
+                        <li><a class="fa"  href="{% url 'index' %}">Home</a> -</li>
+                        <li>About us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Page Banner Area End Here -->
+        
+        <!-- About Page 1 Area Start Here -->
+        <div class="about-page1-area">
+            <div class="container">
+                <div class="row about-page1-inner">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="about-page-content-holder">
+                            <div class="content-box">
+                                <h2>Who We Are</h2>
+                                <p>The New World Emerald Private Schools (NWEPS) is an independent, fee- paying, not for profit hybrid school which meets the needs of internationally mobile and expatriate families and local families in FCT - Abuja, Nigeria  who want quality and affordable education.
+                                The NWEP is an inclusive learning community. All students who can benefit from the NWEP experience are welcomed and are expected to be fully committed in their approach to learning.The New World Private Schools expects students from all over the nation and is made up of three schools:.</p>
+                            </div>
+                            <div class="content-box">
+                                <h2>Our Core Values</h2>
+                                    <ul style="list-style-type: circle;">
+                                        <li class="lit">Child Centeredness</li>
+                                        <li class="lit">Respect</li>
+                                        <li class="lit">Integrity</li>
+                                        <li class="lit">Excellence</li>
+                                        <li class="lit">Good morals</li>
+                                        <li class="lit">Discipline</li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="about-page-img-holder wow fadeUp" data-wow-delay=".2s">
+                            <img data-wow-duration="2s" data-wow-delay=".3s" src="{% static 'img/about/whowearerm2.png' %}" class="img-responsive wow fadeInRight" alt="about">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row about-page1-inner">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="about-page-img-holder fadeIn">
+                            <img data-wow-delay=".5s" src="{% static 'img/about/visionmissionrm1.png' %}" class="img-responsive wow fadeInUp" alt="about">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="about-page-content-holder">
+                            
+                            <div class="content-box">
+                                <h2>Vision Statement</h2>
+                                <p>Our vision is to empower students to acquire, demonstrate, articulate, value knowledge and skill that will support them as future learners to participate in, contribute to the global world and practice the core value of the school: Respect, tolerance, inclusion and child centeredness, integrity and excellence.</p>
+                            </div>
+                            <div class="content-box">
+                                <h2>Mission Statement</h2>
+                                <p>Our mission is to nurture children with active and creative minds, a sense of understanding and compassion for others and the courage to be independent.</p> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- About Page 1 Area End Here -->
+
+        <!-- Certificate Area Start Here -->
+        <div class="certificate-area">
+            <h2 class="title-default-center">Achievements</h2>
+            <div class="container">
+                <div class="rc-carousel" data-loop="true" data-items="4" data-margin="30" data-autoplay="true" data-autoplay-timeout="10000" data-smart-speed="2000" data-dots="false" data-nav="false" data-nav-speed="false" data-r-x-small="1" data-r-x-small-nav="false"
+                    data-r-x-small-dots="false" data-r-x-medium="2" data-r-x-medium-nav="false" data-r-x-medium-dots="false" data-r-small="3" data-r-small-nav="false" data-r-small-dots="false" data-r-medium="4" data-r-medium-nav="false" data-r-medium-dots="false"
+                    data-r-large="4" data-r-large-nav="false" data-r-large-dots="false">
+                    <div class="single-item">
+                        <div class="single-item-wrapper">
+                            <img src="{% static 'img/certificate/1.jpg' %}" class="img-responsive" alt="certificate">
+                        </div>
+                    </div>
+                    <div class="single-item">
+                        <div class="single-item-wrapper">
+                            <img src="{% static 'img/certificate/2.jpg' %}" class="img-responsive" alt="certificate">
+                        </div>
+                    </div>
+                    <div class="single-item">
+                        <div class="single-item-wrapper">
+                            <img src="{% static 'img/certificate/3.jpg' %}" class="img-responsive" alt="certificate">
+                        </div>
+                    </div>
+                    <div class="single-item">
+                        <div class="single-item-wrapper">
+                            <img src="{% static 'img/certificate/4.jpg' %}" class="img-responsive" alt="certificate">
+                        </div>
+                    </div>
+                    <div class="single-item">
+                        <div class="single-item-wrapper">
+                            <img src="{% static 'img/certificate/1.jpg' %}" class="img-responsive" alt="certificate">
+                        </div>
+                    </div>
+                    <div class="single-item">
+                        <div class="single-item-wrapper">
+                            <img src="{% static 'img/certificate/2.jpg' %}" class="img-responsive" alt="certificate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Certificate Area End Here -->
+
+<!-- Management Team Area Start Here -->
+        <div class="lecturers-area wow bounceInUp" data-wow-delay=".3s">
+            <div class="container">
+                <h2 class="title-default-left">Meet The Leadership Team</h2>
+            </div>
+            <div class="container">
+                <div class="rc-carousel" data-loop="true" data-items="4" data-margin="30" data-autoplay="false" data-autoplay-timeout="10000" data-smart-speed="2000" data-dots="false" data-nav="true" data-nav-speed="false" data-r-x-small="1" data-r-x-small-nav="true"
+                    data-r-x-small-dots="false" data-r-x-medium="2" data-r-x-medium-nav="true" data-r-x-medium-dots="false" data-r-small="3" data-r-small-nav="true" data-r-small-dots="false" data-r-medium="4" data-r-medium-nav="true" data-r-medium-dots="false"
+                    data-r-large="4" data-r-large-nav="true" data-r-large-dots="false">
+                    {% for l in leadership %}
+                    <div class="single-item">
+                        <div class="lecturers1-item-wrapper">
+                            <div class="lecturers-img-wrapper">
+                                <a href="#"><img class="img-responsive" src="{{ l.photo.url }}" style="height:180px; width:70%; border-radius: 20%;" alt="team"></a>
+                            </div>
+                            <div class="lecturers-content-wrapper">
+                                <h3 class="item-title"><a href="#">{{ l.name }}</a></h3>
+                                <span class="item-designation">{{ l.designation }}</span>
+                                <ul class="lecturers-social">
+                                    <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <!-- <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <!-- Management Team Area End Here -->
+
+
+        <div class="section-divider"></div>
+        <!-- Brand Area Start Here -->
+        <div class="brand-area">
+            <div class="container">
+                <div class="container">
+                <h2 class="title-default-left">Partnership Brands</h2>
+            </div>
+                <div class="rc-carousel" data-loop="true" data-items="4" data-margin="30" data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="2000" data-dots="false" data-nav="false" data-nav-speed="false" data-r-x-small="2" data-r-x-small-nav="false"
+                    data-r-x-small-dots="false" data-r-x-medium="3" data-r-x-medium-nav="false" data-r-x-medium-dots="false" data-r-small="4" data-r-small-nav="false" data-r-small-dots="false" data-r-medium="4" data-r-medium-nav="false" data-r-medium-dots="false"
+                    data-r-large="4" data-r-large-nav="false" data-r-large-dots="false">
+                    <div class="brand-area-box">
+                        <a href="#"><img src="{% static 'img/brand/1.jpg' %}" alt="brand"></a>
+                    </div>
+                    <div class="brand-area-box">
+                        <a href="#"><img src="{% static 'img/brand/2.jpg' %}" alt="brand"></a>
+                    </div>
+                    <div class="brand-area-box">
+                        <a href="#"><img src="{% static 'img/brand/3.jpg' %}" alt="brand"></a>
+                    </div>
+                    <div class="brand-area-box">
+                        <a href="#"><img src="{% static 'img/brand/4.jpg' %}" alt="brand"></a>
+                    </div>
+                    <div class="brand-area-box">
+                        <a href="#"><img src="{% static 'img/brand/1.jpg' %}" alt="brand"></a>
+                    </div>
+                    <div class="brand-area-box">
+                        <a href="#"><img src="{% static 'img/brand/2.jpg' %}" alt="brand"></a>
+                    </div>
+                    <div class="brand-area-box">
+                        <a href="#"><img src="{% static 'img/brand/3.jpg' %}" alt="brand"></a>
+                    </div>
+                    <div class="brand-area-box">
+                        <a href="#"><img src="{% static 'img/brand/4.jpg' %}" alt="brand"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Brand Area End Here -->
+
+       
+
+{% endblock content %}

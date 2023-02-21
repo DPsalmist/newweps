@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+        <!-- Inner Page Banner Area Start Here -->
+        <div class="inner-page-banner-area" style="background-color: #00dc00 !important;">
+            <div class="container">
+                <div class="pagination-area"><br><br>
+                    <h1 class="spheaders">School News</h1>
+                    <ul>
+                        <li><a class="fa"  href="{% url 'index' %}">Home</a> -</li>
+                        <li>News -</li> <li>Detail</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Page Banner Area End Here --> <br>
+        <!-- News Page Area Start Here -->
+        <div class="news-page-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12">
+                        {% for n in news %}
+                        <div class="row">  
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="news-box">
+                                    <div class="news-img-holder">
+                                        <img src="{% static 'img/news/2.jpg' %}" class="img-responsive" alt="research">
+                                        <h5 style="width:;" class="">{{ n.date_created| date:'d M, Y' }}</h5>
+                                        <!-- <ul class="news-date1">
+                                            <li style="width:; border:2px 5px green" class="">{{ n.date_created| date:'d M, Y' }}</li>
+                                            <li class="btn2">{{ n.date_created| date:'Y' }}</li>
+                                        </ul> -->
+                                    </div>
+                                    <h2 class="title-default-left-bold"><a href="#">{{ n.title }}</a></h2> 
+                                    <ul class="title-bar-high news-comments">
+                                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span>By</span> Admin</a></li>
+                                        <li><a href="#"><i class="fa fa-tags" aria-hidden="true"></i>Business</a></li>
+                                        <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i><span>(03)</span> Comments</a></li>
+                                    </ul>
+                                    <p>{{ n.body }}.</p>
+                                    <a href="#" class="default-big-btn btn2">Read More</a>
+                                </div><hr><br>
+                            </div>
+
+                        </div>
+                          {% endfor %}
+                          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <ul class="pagination-center">
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                        <div class="sidebar">
+                            <div class="sidebar-box">
+                                <div class="sidebar-box-inner">
+                                    <h3 class="sidebar-title">Search</h3>
+                                    <div class="sidebar-find-course">
+                                        <form id="checkout-form">
+                                            <div class="form-group course-name">
+                                                <input id="first-name" placeholder="Type Here . . .." class="form-control" type="text" />
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="sidebar-search-btn-full disabled btn2" type="submit" value="Login">Search</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar-box">
+                                <div class="sidebar-box-inner">
+                                    <h3 class="sidebar-title">Categories</h3>
+                                    <ul class="sidebar-categories">
+                                        <li><a href="#">GMAT</a></li>
+                                        <li><a href="#">IELTS</a></li>
+                                        <li><a href="#">Regular MBA</a></li>
+                                        <li><a href="#">BBA</a></li>
+                                        <li><a href="#">CSE</a></li>
+                                        <li><a href="#">Diploma</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sidebar-box">
+                                <div class="sidebar-box-inner">
+                                    <h3 class="sidebar-title">Latest Posts</h3>
+                                    <div class="sidebar-latest-research-area">
+                                        <ul>
+                                            <li>
+                                                <div class="latest-research-img">
+                                                    <a href="#"><img src="{% static 'img/news/1.jpg' %}" class="img-responsive" alt="skilled"></a>
+                                                </div>
+                                                <div class="latest-research-content">
+                                                    <h4>30 Nov, 2016</h4>
+                                                    <p>when an unknown printer took.</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="latest-research-img">
+                                                    <a href="#"><img src="{% static 'img/news/3.jpg' %}" class="img-responsive" alt="skilled"></a>
+                                                </div>
+                                                <div class="latest-research-content">
+                                                    <h4>10 Aug, 2016</h4>
+                                                    <p>when an unknown printer took.</p>
+                                                </div>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                           <!--  <div class="sidebar-box">
+                                <div class="sidebar-box-inner">
+                                    <h3 class="sidebar-title">Popular Tags</h3>
+                                    <ul class="product-tags">
+                                        <li><a href="#">Education</a></li>
+                                        <li><a href="#">Study</a></li>
+                                        <li><a href="#">Class</a></li>
+                                        <li><a href="#">Lecturers</a></li>
+                                        <li><a href="#">Events</a></li>
+                                        <li><a href="#">University</a></li>
+                                        <li><a href="#">Date</a></li>
+                                        <li><a href="#">Campus</a></li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- News Page Area End Here -->
+
+{% endblock content %}
